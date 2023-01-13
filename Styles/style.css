@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&display=swap'); 
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: content-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3d60c27a-f87a-4412-a948-cff8a2b898bf/dp7phu-fce1ab14-a005-42da-b49a-e722588d70f2.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNkNjBjMjdhLWY4N2EtNDQxMi1hOTQ4LWNmZjhhMmI4OThiZlwvZHA3cGh1LWZjZTFhYjE0LWEwMDUtNDJkYS1iNDlhLWU3MjI1ODhkNzBmMi5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.w5atHUeXLHxJCf8R-DyL6Sy0uBJCGWrew15Y_DV11x8');
+    background-size: cover;
+    background-repeat: repeat;
+    font-family: 'Roboto Slab', serif;
+}
+
+.header {
+    text-align: center;
+    color: rgb(0, 221, 255);
+    padding-top: 20px;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+}
+#contenedorCards{
+    display: flex;
+    padding: 30px;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.main___card{
+
+    width: 350px;
+    height: 350px;
+    position: relative;
+
+}
+.card__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__name {
+    position: absolute;
+    top: 0;  
+    left: 40%; 
+    padding: 10px 5px; 
+}
+
+.main___card :hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: scale(1.1);
+
+}
+
+.main__filtros{
+    display: flex;
+   justify-content: space-evenly;
+   
+}
+
+.main__filtros button{
+    width: auto;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-family: 'Roboto Slab', serif;
+    font-style: italic;
+    border: 2px solid goldenrod  ;
+    background-color: white;
+    flex-direction: column;
+  
+}
+
+.main__filtros button:hover{
+    color: goldenrod;
+    border: 2px solid black ;
+    background-color: white;
+    cursor: pointer;
+}
